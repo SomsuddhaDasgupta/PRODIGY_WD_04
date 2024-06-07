@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/jpg" href="photos/favicon.jpeg">
+        <script src="https://kit.fontawesome.com/bb99200153.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> </p>
+                <h1>Hi, I'm <span>Somsuddha</span><br>from Kolkata</h1>
+            </div>
+        </div>
+    </div>
+   <!---- ----------- About Me -------- -->
+    <div id="AboutMe">
+        <div class="container">
+            <div class="row">
+                <div class="AboutMe-col-1">
+                    <img src="photos/aboutme.jpeg">
+                </div>
+                <div class="AboutMe-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A 19-year-old engineering student from Kolkata is pursuing a Bachelor's degree in Electrical Engineering at Institute of Engineering and Management. I am interning at Prodigy Infotech, gaining practical experience in web development and machine learning, with a passion for innovation.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Developement</span><br>Web/App Interfaces</li>
+                            <li><span>App Developement</span><br>Building Android/Ios Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Class 1-10 (2011-2021)</span><br>Chandernagore Kanailal Vidyamandir(ENG.SEC.)<br>81.57% in class 10</li>
+                            <li><span>Class 11-12 (2021-2023)</span><br>Chandernagore Sri Aurobindo Vidyamandir<br>68.60% in class 12</li>
+                            <li><span>Under Graduation (2023-current)</span><br>Institute of Engineering & Management,SaltLake<br>Electrical Engineering<br><span>..will graduate in 2027</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Internship at Prodigy InfoTech</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX</h2>
+                <p>Crafting seamless and engaging user experiences through innovative design, interactive prototypes, and visually appealing interfaces</p>
+                <a href="#"></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>Designing stunning, responsive websites that captivate users and drive engagement</p>
+                <a href="#"></a>
+            </div>
+            <div>
+                <i class="fa-brands fa-sketch"></i>
+                <h2>App Design</h2>
+                <p>Creating sleek, user-friendly app designs that offer seamless experiences and enhance user engagement</p>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------portfolio--------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="photos/smedia.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>A social media app that fosters global connectivity, enabling users to share moments, ideas, and interact across vast digital networks</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photos/oshop.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Seamless, intuitive, and personalized shopping experiences directly from your mobile device</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photos/foodd.jpeg">
+                <div class="layer">
+                    <h3>Food Delivery App</h3>
+                    <p>Connects people with local restaurants, enabling seamless ordering and delivery of their favorite meals</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ------------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>somsuddha07@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9874061***</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/somsuddha.dasgupta.5?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/somsuddha.dg_?igsh=Y2VybmhranJmd3Zn"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://x.com/Somsuddha_DG?t=YitnR7-02HxM2uY8wsZUgg&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/somsuddha-dasgupta-618b70284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwVW-RI1SL8FHpMC6smNwGU_CMlT4THXZtWeHiYtFivgJ7gFwmYEVVb_9_Pq8iSsu1oog/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully <3"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
